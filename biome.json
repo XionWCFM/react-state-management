@@ -18,10 +18,15 @@
 	},
 	"linter": {
 		"enabled": true,
+
 		"rules": {
 			"recommended": true,
 			"style": {
-				"useSelfClosingElements": "off"
+				"useSelfClosingElements": "off",
+				"useImportType": "off"
+			},
+			"a11y": {
+				"useButtonType": "off"
 			}
 		}
 	},
