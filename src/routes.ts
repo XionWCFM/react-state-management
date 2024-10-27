@@ -51,4 +51,9 @@ export const routes = [
     label: "React Query Example",
     description: "react-query를 이용하여 상태를 관리하는 예시입니다.",
   },
+  {
+    href: "/react-hook-form",
+    label: "React Hook Form Example",
+    description: "react-hook-form를 이용하여 상태를 관리하는 예시입니다.",
+  },
 ];
