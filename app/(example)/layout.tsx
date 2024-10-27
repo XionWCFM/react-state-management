@@ -9,13 +9,19 @@ import { toast } from "@xionwcfm/xds/toast";
 
 export default function Layout(props: { children: React.ReactNode }) {
   return (
-    <div className=" flex gap-16 flex-col md:flex-row ">
+    <div className=" flex gap-16 flex-col-reverse">
       <Sidebar />
-      <div className=" w-full flex flex-col p-16">{props.children}</div>
-      <div className=" absolute bottom-[32px] left-[50%] translate-x-[-50%]">
-        <Button onClick={() => toast.dismiss()} variant={"outline"} size={"md"}>
-          toast dismiss
-        </Button>
+      <div className=" flex flex-col">
+        <div className=" w-full flex flex-col p-16">{props.children}</div>
+        <div className="">
+          <Button
+            onClick={() => toast.dismiss()}
+            variant={"outline"}
+            size={"md"}
+          >
+            toast dismiss
+          </Button>
+        </div>
       </div>
     </div>
   );
